@@ -1,35 +1,48 @@
 body {
-    height: 800px;
-    width: 1200px;
-  }
-  
-  @keyframes falling {
-    to { top: 110vh; }
-  }
-  
-  @keyframes rotate {
-    from {transform: rotate(0deg); }
-     to {transform: rotate(360deg); }
-  }
-  
-  .letters span {
-    top: -25vw;
-    position: fixed;
-    font-size: 20vw;
-    animation:
-      falling 10s ease-in-out infinite,
-      rotate 5s linear infinite;
-  }
-  
-  
-  
-  .letters span:nth-child(2n) {
-    animation-direction: normal, reverse;
-  }
-  
-  .letters span:nth-child(4n) {
-    color: #faa500;
-  }
-  
-  
-  
+  height: 800px;
+  width: 1200px;
+}
+
+@keyframes falling {
+  to { top: 110vh; }
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg); }
+   to {transform: rotate(360deg); }
+}
+
+.letters span {
+  top: -25vw;
+  position: fixed;
+  font-family: 'Mansalva', cursive;
+  font-size: 20vw;
+  animation:
+    falling 10s ease-in-out infinite,
+    rotate 5s linear infinite;
+}
+
+
+
+.letters span:nth-child(2n) {
+  animation-direction: normal, reverse;
+}
+
+.letters span:nth-child(3n) {
+  color: red;
+  animation-direction: normal, reverse;
+}
+
+.letters span:nth-child(1n) {
+  color: red;
+  animation-direction: normal, reverse;
+}
+
+
+.letters span:nth-child(4n) {
+  color: #faa500;
+  font-size: 85px;
+  animation-direction: normal, reverse;
+}
+
+
