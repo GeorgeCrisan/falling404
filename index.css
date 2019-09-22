@@ -1,6 +1,6 @@
 body {
   height: 800px;
-  width: 1200px;
+  width: 100%;
 }
 
 @keyframes falling {
@@ -16,7 +16,8 @@ body {
   top: -25vw;
   position: fixed;
   font-family: 'Mansalva', cursive;
-  font-size: 20vw;
+  font-size: 60px;
+  animation-direction: alternate;
   animation:
     falling 10s ease-in-out infinite,
     rotate 5s linear infinite;
@@ -24,25 +25,24 @@ body {
 
 
 
-.letters span:nth-child(2n) {
+.letters span:nth-child(odd) {
   animation-direction: normal, reverse;
+  font-size: 60px;
+  color: red;
 }
 
-.letters span:nth-child(3n) {
-  color: red;
-  animation-direction: normal, reverse;
+.letters span:nth-child(even) {
+  color: black;
+  font-size: 80px;
+  animation-direction: alternate;;
 }
 
-.letters span:nth-child(1n) {
-  color: red;
-  animation-direction: normal, reverse;
-}
 
 
 .letters span:nth-child(4n) {
   color: #faa500;
   font-size: 85px;
-  animation-direction: normal, reverse;
+  animation-direction: alternate;
 }
 
 
